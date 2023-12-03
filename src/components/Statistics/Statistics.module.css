@@ -1,0 +1,56 @@
+.list {
+    margin-left: 40px;
+  }
+  
+  .item {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 14px;
+    width: 350px;
+    text-decoration-style: dashed ;
+  }
+  
+  .value {
+    font-family: 'Unbounded', cursive;
+    margin-left: 16px;
+    font-weight: 600;
+  }
+  
+  .line {
+    width: 400px;
+    height: 2px;
+    margin: 15px auto 15px auto;
+    background-color: rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .total {
+    margin-left: 40px;
+  }
+  
+  .points {
+    flex-grow: 1;
+    margin-left: 16px;
+    height: 15px; 
+    border-bottom: dashed rgb(1, 1, 1);
+  }
+  
+  .positive {
+    font-weight: 600;
+    color: rgb(3, 60, 3);
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 30px;
+    border: 1px solid green;
+    padding: 8px 18px;
+    border-radius: 10px;
+  }
+  
+  .presenters {
+    margin-left: 100px;
+    font-weight: 600;
+    color: rgb(3, 60, 3);
+  }

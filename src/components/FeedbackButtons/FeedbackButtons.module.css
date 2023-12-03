@@ -1,0 +1,68 @@
+.btn {
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  /* .btn:hover {
+    transform: scale(1.05) rotate(1deg);
+  } */
+  
+  .good {
+    background-color: #57f373;
+    box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+      rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+      rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+      rgba(44, 187, 99, 0.15) 0 16px 32px;
+    color: rgb(6, 120, 6);
+  }
+  
+  .good:hover {
+    box-shadow: rgba(34, 129, 62, 0.35) 0 -25px 18px -14px inset,
+      rgba(34, 129, 62, 0.35) 0 1px 2px, rgba(34, 129, 62, 0.35) 0 2px 4px,
+      rgba(34, 129, 62, 0.35) 0 4px 8px, rgba(34, 129, 62, 0.35) 0 8px 16px,
+      rgba(34, 129, 62, 0.35) 0 16px 32px;
+  }
+  
+  .neutral {
+    background-color: #c8de7b;
+    box-shadow: rgba(123, 123, 123, 0.2) 0 -25px 18px -14px inset,
+      rgba(123, 123, 123, 0.15) 0 1px 2px, rgba(123, 123, 123, 0.15) 0 2px 4px,
+      rgba(123, 123, 123, 0.15) 0 4px 8px, rgba(123, 123, 123, 0.15) 0 8px 16px,
+      rgba(123, 123, 123, 0.15) 0 16px 32px;
+    color: rgb(13, 59, 27);
+  }
+  
+  .neutral:hover {
+    box-shadow: rgba(123, 123, 123, 0.35) 0 -25px 18px -14px inset,
+      rgba(123, 123, 123, 0.35) 0 1px 2px, rgba(123, 123, 123, 0.35) 0 2px 4px,
+      rgba(123, 123, 123, 0.35) 0 4px 8px, rgba(123, 123, 123, 0.35) 0 8px 16px,
+      rgba(123, 123, 123, 0.35) 0 16px 32px;
+  }
+  
+  .bad {
+    background-color: #f8b5b5;
+    box-shadow: rgba(152, 20, 20, 0.2) 0 -25px 18px -14px inset,
+      rgba(152, 20, 20, 0.15) 0 1px 2px, rgba(152, 20, 20, 0.15) 0 2px 4px,
+      rgba(152, 20, 20, 0.15) 0 4px 8px, rgba(152, 20, 20, 0.15) 0 8px 16px,
+      rgba(152, 20, 20, 0.15) 0 16px 32px;
+    color: rgb(135, 6, 6);
+  }
+  
+  .bad:hover {
+    box-shadow: rgba(152, 20, 20, 0.35) 0 -25px 18px -14px inset,
+      rgba(152, 20, 20, 0.35) 0 1px 2px, rgba(152, 20, 20, 0.35) 0 2px 4px,
+      rgba(152, 20, 20, 0.35) 0 4px 8px, rgba(152, 20, 20, 0.35) 0 8px 16px,
+      rgba(152, 20, 20, 0.35) 0 16px 32px;
+  }
+  

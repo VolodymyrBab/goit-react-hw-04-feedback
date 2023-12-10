@@ -47,7 +47,7 @@ const App = () => {
         />
       </Section>
       <Section title="Statistics">
-        {total ? (
+        {total() ? (
           <Statistics
             good={good}
             neutral={neutral}

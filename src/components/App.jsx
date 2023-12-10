@@ -11,20 +11,30 @@ const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
   
-  const total = good + neutral + bad;
-  const positivePercentage = Math.round((good / total) * 100);
+  const options = ['good', 'neutral', 'bad'];
+  
   
   console.log('good>>', good )
 
-
-
-  onLeaveFeedback = (evt) => {
-    // console.log(evt.target);
-    const { name } = evt.target;
-    this.setState(prevState => ({
-      [name]: prevState[name] + 1,
-    }));
+  const onLeaveFeedback = (e) => {
+    switch (e.target.name) {
+      case 'good':
+        setGood(good + 1)
+        break;
+      case 'neutral':
+        setNeutral(neutral + 1)
+        break;
+      case 'bad':
+        setBad(bad + 1);
+        break;
+      default:
+        break;
+    }
   };
+
+  const total = () => good + neutral + bad;
+  const positivePercentage = () =>  Math.round((good / (good + neutral + bad)) * 100);
+
 
 
 
@@ -32,8 +42,8 @@ const App = () => {
     <div>
       <Section title="Please leave feedback">
         <FeedbackOptions 
-          options={Object.keys(this.state)}
-          onLeaveFeedback={this.onLeaveFeedback}
+          options={options}
+          onLeaveFeedback={onLeaveFeedback}
         />
       </Section>
       <Section title="Statistics">
@@ -42,8 +52,8 @@ const App = () => {
             good={good}
             neutral={neutral}
             bad={bad}
-            total={total}
-            positivePercentage={positivePercentage}
+            total={total()}
+            positivePercentage={positivePercentage()}
           />
         ) : (
             <Notification message="There is no feedback"/>
